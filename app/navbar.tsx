@@ -21,7 +21,7 @@ const MenuBar: React.FC = () => {
     // <div className={styles.containerMenubar}>
     <div className={`containerMenubar ${isActive ? 'active' : ''}`}>
       <nav className="navbar">
-        <a href="/" className="nav-branding">CPUselection</a>
+        <a href="/fpscalcurater" className="nav-branding">CPUselection</a>
         <ul className={`nav-links ${isActive ? 'active' : ''}`} onClick={toggleNavbar}>
           <li className="nav-link ranking">
             <a className='centerText' href="#">

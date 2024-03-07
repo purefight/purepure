@@ -1,9 +1,10 @@
 import React from 'react'
 
+// pure
 export default function firstpage() {
   return (
     <div>
-      <h1>First Page</h1>
+      <h1>coming soon...</h1>
     </div>
     
   )

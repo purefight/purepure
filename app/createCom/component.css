@@ -662,5 +662,68 @@
   width: 25px;
 }
 
+@media (max-width: 786px) {
+  .square-white{
+    min-width: 80px;
+    width:320px;
+    height: 570px;
+  }
+
+  .item-group{
+    width: 140px;
+  }
+
+  .selectionOption{
+    width: 70px;
+    min-width: 50px;
+  }
+
+  .container2 .cpu { 
+    grid-area: 1 / 1; 
+    margin: 0px 0px;
+  }
+
+  .container2 .gpu { 
+    grid-area: 1 / 1; 
+    margin: 0px 150px;
+  }
+
+  .container2 .mainboard { 
+    grid-area: 1 / 1; 
+    margin: 110px 0px; 
+  }
+  .container2 .ram { 
+    grid-area: 1 / 1; 
+    margin: 220px 0px; 
+  }
+  .container2 .case { 
+    grid-area: 1 / 1; 
+    margin: 220px 150px; 
+  }
+
+  .container2 .power-supply { 
+    grid-area: 1 / 1; 
+    margin: 220px 150px; 
+  }
+
+  .container2 .monitor { 
+    grid-area: 1 / 1; 
+    margin: 330px 150px; 
+  }
+
+  .container2 .cooling { 
+    grid-area: 1 / 1; 
+    margin: 330px 0px; 
+  }
+  .container2 .ssd { 
+    grid-area: 1 / 1; 
+    margin: 110px 150px; 
+  }
+  .container2 .hard-disk { 
+    grid-area: 1 / 1; 
+    margin: 440px 0px; 
+  }
+}
+
 
 
