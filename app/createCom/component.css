@@ -1,0 +1,666 @@
+.container {
+  display: grid;
+  grid-template:
+    'header header' 1fr
+    'sidebar main' 4fr
+    'footer footer' 1fr
+    / 1fr 4fr;
+  grid-gap: 10px;
+  color: #fff;
+  font-family: 'IBM Plex Sans Thai Looped', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* grid-template-rows: 1fr 3fr 1fr; */
+}
+
+.container > * {
+  padding: 10px;
+}
+
+.square-linear {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(93deg, black 0%, #1D428A 100%);
+}
+
+.header {
+  /* background: #8cc152; */
+  grid-area: header;
+  z-index: 1;
+  font-family: 'IBM Plex Sans Thai';
+  position: relative;
+}
+
+.main {
+  /* background: #f6bb42; */
+  grid-area: main;
+  z-index: 1;
+  /* margin-top: -10%; */
+  font-family: 'IBM Plex Sans Thai';
+}
+
+.sidebar {
+  /* background: #e9573f; */
+  grid-area: sidebar;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 10px;
+  /* margin-top: -40%; */
+  font-family: 'IBM Plex Sans Thai';
+  width: 100%;
+  max-width: auto-fit;
+  min-width: auto-fit;
+}
+
+.sidebar, .main {
+  margin-top: 0; 
+}
+
+.footer {
+  /* background: #d770ad; */
+  grid-area: footer;
+  z-index: 1;
+}
+
+.text-header {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  z-index: 1;
+  font-family: 'IBM Plex Sans Thai';
+  padding: 10px;
+}
+
+.square-white {
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  width:100%;
+  max-width: 1700px;
+  min-width: 700px;
+  z-index: 2;
+  border-radius: 10px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+   */
+}
+
+.container2 {
+  display: grid;
+  /* grid-template-rows: repeat(2, 100px);  */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+  
+}
+
+.container2 {
+  grid-template-rows: 100px 100px; 
+  /* grid-template-columns: repeat(5, auto);  */
+  gap: 10px; 
+  position: relative;
+  padding: 10px;
+}
+
+/* .container2 > * {
+  padding: 10px;
+} */
+
+
+.item-group{
+  /* border: 1px solid; */
+  box-shadow: 0px 4px 4px #00000040;
+  height: 20px;
+  left: 8px;
+  position: relative;
+  top: 0px;
+  width: 191px;
+  max-width: 360px;
+  /* min-width: 180px; */
+  /* max-width: auto-fit; */
+  /* min-width: auto-fit; */
+}
+
+.item {
+  /* height: 100%; */
+  position: relative;
+  width: 100%;
+  max-width: auto-fit;
+  min-width: auto-fit;
+}
+
+.rectangle {
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: #120083;
+  height: 28px;
+  left: 0px;
+  position: relative;
+  top: 0;
+  /* width: 260px; */
+
+  max-width: auto-fit;
+  min-width: auto-fit;
+}
+
+.text-name-component {
+  color: #000000;
+  font-size: 14px; /* 2% ของความกว้างของหน้าจอ */
+  font-stretch: condensed;
+  left: 40px; /* 2% ของความกว้างของหน้าจอ */
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0.4vh; /* 0.2% ของความสูงของหน้าจอ */
+  width: auto;
+  max-width: auto;
+  min-width: auto;
+}
+
+/* .text-name-component {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: condensed;
+  left: 43px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2px;
+  width: 150px;
+  max-width: auto-fit;
+  min-width: auto-fit;
+} */
+
+ .image {
+  height: 16px;
+  left: 15px;
+  object-fit: cover;
+  position: absolute;
+  top: 7px;
+  width: 17px;
+}
+
+ .rectangle-blue {
+  background-color: #120083;
+  height: 31px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+ /* .group-button {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 54px;
+  left: 8px;
+  position: absolute;
+  top: 30px;
+  width: 96%;
+  max-width: auto-fit;
+  min-width: auto-fit;
+
+} */
+
+.button-select {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 5px;
+  height: 40%;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: auto-fit;
+  min-width: auto-fit;
+}
+
+.button-select .text-name-select {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2;
+  position: absolute;
+  width: auto;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  max-width: auto-fit;
+  min-width: auto-fit;
+
+  
+}
+
+.add-ring {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  /* height: 80% !important; */
+  /* width: 80%!important; */
+  max-width: auto-fit;
+  min-width: auto-fit;
+}
+
+.container2 .cpu { 
+  grid-area: 1 / 1; 
+  position: relative;
+  margin: 10px;
+  height: 85px;
+  /* left: 301px; */
+  /* position: absolute; */
+  /* top: 10%; */
+  /* width: 260px; */
+  /* border: 3px solid red; */
+  /* margin: 40px 0px 0px 40%; */
+}
+
+.container2 .mainboard { 
+  grid-area: 1 / 2; 
+  position: relative;
+  margin: 10px;
+
+}
+
+.container2 .ram { 
+  grid-area: 1 / 3; 
+  position: relative;
+  margin: 10px;
+}
+
+.container2 .gpu { 
+  grid-area: 1 / 4; 
+  position: relative;
+  margin: 10px;
+}
+
+.container2 .case { 
+  grid-area: 1 / 5; 
+  position: relative;
+  margin: 10px;
+}
+
+.container2 .power-supply { 
+  grid-area: 2 / 1; 
+  position: relative;
+  margin: 10px;
+}
+
+.container2 .monitor { 
+  grid-area: 2 / 2; 
+  position: relative;
+  margin: 10px;
+}
+
+.container2 .cooling { 
+  grid-area: 2 / 3; 
+  position: relative;
+  margin: 10px;
+}
+
+.container2 .ssd { 
+  grid-area: 2 / 4; 
+  position: relative;
+  margin: 10px;
+}
+
+.container2 .hard-disk { 
+  grid-area: 2 / 5; 
+  position: relative;
+  margin: 10px;
+}
+
+.container-sidebar {
+  display: grid;
+  grid-template-rows: repeat(3, auto-fit); /* ตั้งค่าสูงของแถวให้เท่ากัน */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* ปรับขนาดของคอลัมน์ให้ยืดหดตาม container */
+  gap: 10px; /* ระยะห่างระหว่าง grid items */
+  padding: 10px;
+}
+.container-sidebar .bg-price {
+  grid-area: 1/1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 100%;
+  height: 180px;
+  max-width: auto-fit;
+  min-width: auto-fit;
+  position: relative;
+  left: -5px;
+}
+
+.container-sidebar .Ranking {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  grid-area: 2/1;
+  max-width: auto-fit;
+  min-width: auto-fit;
+  top: 10%;
+  left: -5px;
+}
+
+.container-sidebar .BgFilterRanking {
+  width: 100%;
+  height: 280px;
+  left: 0;
+  top: 0;
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  max-width: auto-fit;
+  min-width: auto-fit;
+}
+
+.container-sidebar.TextRanking {
+  width: 130px;
+  height:55px;
+  left: 73.24px;
+  top: 2%;
+  position: relative;
+  text-align: center;
+  color: red;
+  font-size: 24px;
+  font-family: 'IBM Plex Sans Thai';
+  font-weight: 500;
+  word-wrap: break-word;
+  max-width: auto-fit;
+  min-width: auto-fit;
+}
+
+.container-sidebar .ButtonNewnow {
+  width: 100%;
+  height: 10%;
+  position: relative;
+  max-width: auto-fit;
+  min-width: auto-fit;
+  color: #000;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.container-sidebar .RectangleNewnow {
+  width: 260px;
+  height: 70%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.container-sidebar .TextNewnow {
+  width: 260px;
+  height: 70%;
+  left: 1.13px;
+  top: 2.07px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: 'IBM Plex Sans Thai';
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.container-sidebar.ButtonOldest {
+  width: 260px;
+  height: 70%;
+  left: 9.72px;
+  top: 35%;
+  position: absolute;
+}
+
+.container-sidebar .RectangleOldest {
+  width: 260px;
+  height: 20%;
+  left: 0;
+  top: -2%;
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.container-sidebar .TextOldest {
+  width: 260px;
+  height: 70%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: 'IBM Plex Sans Thai';
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.container-sidebar .ButtonScorefps {
+  width: 260px;
+  height: 70%;
+  left: 9.72px;
+  top: 218px;
+  position: absolute;
+}
+
+.container-sidebar .RectangleScorefps {
+  width: 260px;
+  height: 20%;
+  left: 0;
+  top: -10%;
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.container-sidebar .TextCsorefps {
+  width: 260px;
+  height: 70%;
+  left: 0.49px;
+  top: -6%;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: 'IBM Plex Sans Thai';
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.container-sidebar .ButtonPopular {
+  width: 260px;
+  height: 70%;
+  left: 8.97px;
+  top: 161px;
+  position: absolute;
+}
+
+.container-sidebar.RectanglePopular {
+  width: 260px;
+  height: 20%;
+  left: 0;
+  top: -8%;
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.container-sidebar .TextPopular {
+  width: 260px;
+  height: 70%;
+  left: 0;
+  top: -4%;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: 'IBM Plex Sans Thai';
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.container-sidebar .IconImg {
+  left: 15px;
+  top: 10px;
+  position: absolute;
+}
+
+.container-sidebar .ArrowDropDown {
+  right: 3%;
+  top: 2%;
+  position: absolute;
+}
+
+.selectionOption {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 20px;
+  left: 15px;
+  /* position: absolute; */
+  top: 10px;
+  width: 120px;
+  max-width: 200px;
+  min-width: 110px;
+  border-radius: 0px 0px 10px 10px ;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.selectionOption:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 0px 0px 10px 10px ;
+  
+}
+
+.selectionOption:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  
+}
+
+.selectionOption:after {
+  background-color: #FFFFFF;
+}
+
+.selectionOption span {
+  z-index: 1;
+  position: relative;
+}
+
+.button-select-afterSelected {
+  height: 24px;
+  /* text-align: center; */
+  right: 10px;
+  position: relative;
+  bottom: 7px;
+  /* width: 125px; */
+}
+
+.container-Img-aftreselected{
+  position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: -9px 0px 0px -13px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.img-after-selected{
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+
+.textGameName{
+    
+  text-align: center;
+  border-radius: 10px;
+}
+
+.rectangle-button-afterSelected {
+  border-radius: 5px;
+  left: 50px;
+  position: absolute;
+  top: 28px;
+}
+
+.text-name-select {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  left: 29px;
+  letter-spacing: 0;
+  line-height: 2;
+  position: absolute;
+  top: 0;
+  width: 44px;
+  
+}
+
+.image-icon-pc {
+  height: 25px;
+  left: 9px;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  width: 25px;
+}
+
+
+

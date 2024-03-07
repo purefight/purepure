@@ -1,0 +1,561 @@
+*{
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  
+}
+
+.Firsttext{
+    text-align: center;
+}
+
+.square-linear {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(93deg, black 0%, #1D428A 100%);
+}
+
+.square-white {
+    position: relative;
+    margin: auto;
+    background-color: #FFFFFF;
+    width: 90%;
+    max-width: 1350px;
+    min-width: 900px;
+    height: 330px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.square-white-predictions {
+  position: relative;
+  margin: auto;
+  background-color: #FFFFFF;
+  width: 90%;
+  max-width: 1350px;
+  min-width: 900px;
+  height: 330px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.containerGameImg {
+    position: absolute;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 25px 0px 25px 50px;
+}
+
+.container-Img-aftreselected{
+  position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: -9px 0px 0px -13px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.img-after-selected{
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+
+.gameImg{
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.textGameName{
+    
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* .gameName{
+    text-align: center;
+    padding-right: 204px;
+} */
+
+ .cpu {
+    /* height: 15px; */
+    /* left: 301px; */
+    position: absolute;
+    /* top: 10%; */
+    /* width: 260px; */
+    /* border: 3px solid red; */
+    margin: 40px 0px 0px 40%;
+  }
+
+.gpu {
+    height: 85px;
+    position: absolute;
+    width: 260px;
+    margin: 40px 0px 0px 70%;
+}
+.resolution{
+    height: 85px;
+    position: absolute;
+    width: 260px;
+    margin: 170px 0px 0px 40%;
+}
+
+.graphics-settings{
+    height: 85px;
+    position: absolute;
+    width: 260px;
+    margin: 170px 0px 0px 70%;
+}
+
+   .item-group{
+    height: 31px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    /* width: 150px; */
+    /* border: 3px solid green; */
+  }
+  
+   .item {
+    height: 31px;
+    position: relative;
+    /* width: 150px; */
+    
+  }
+  
+   .rectangle {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #120083;
+    height: 27px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    width: 259px;
+    /* border: 3px solid green; */
+    
+  }
+  
+   .text-name-component {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    left: 43px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 2px;
+    width: 150px;
+    
+  }
+  
+   .image-icon {
+    height: 30px;
+    left: 5px;
+    object-fit: cover;
+    position: absolute;
+    top: -1px;
+    width: 30px;
+  }
+  
+   .rectangle-blue {
+    background-color: #120083;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 8px;
+    
+  }
+
+  
+   .button-select {
+    /* height: 24px; */
+    left: 62px;
+    position: relative;
+    bottom: 7px;
+    width: 75px;
+  }
+
+  .button-select-afterSelected {
+    height: 24px;
+    /* text-align: center; */
+    right: 10px;
+    position: relative;
+    bottom: 7px;
+    /* width: 125px; */
+  }
+  
+   .text-name-select {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    left: 29px;
+    letter-spacing: 0;
+    line-height: 2;
+    position: absolute;
+    top: 0;
+    width: 44px;
+  }
+
+  .text-name-selected{
+    width: 8em; 
+    left: 29px;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+  }
+
+  .text-name-fix{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2;
+    position: absolute;
+    top: 0;
+    width: 44px;
+    top: 13px;
+    left: 35%;
+  }
+  
+   .add-ring {
+    height: 15px !important;
+    left: 11px !important;
+    position: absolute !important;
+    top: 5px !important;
+    width: 14px !important;
+  }
+
+.buttonCalcurater{
+    position: absolute;
+    margin: 40px 0px 0px 55%;
+    width: 120px;
+}
+
+.buttonSave{
+  position: absolute;
+  margin: 250px 0px 0px 85%;
+  width: 110px;
+}
+
+.rectangle-button {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 5px;
+  height: 21px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 70px;
+}
+
+.rectangle-button-afterSelected {
+  /* border-radius: 5px; */
+  /* left: 50px; */
+  /* position: absolute; */
+  /* top: 28px; */
+}
+
+.group-button {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 54px;
+  left: 8px;
+  position: absolute;
+  top: 30px;
+  width: 253px;
+  border-radius: 0px 0px 10px 10px ;
+}
+
+.selectionOptiongraphic {
+  /* appearance: none; */
+  background-color: #ffffff; 
+  border-color: #000000;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 54px;
+  left: 6px;
+  position: absolute;
+  top: 27px;
+  width: 253px;
+  border: 1px solid;
+  border-radius: 0px 0px 10px 10px ;
+  /* border-width: 0; */
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer; 
+  /* display: inline-block; */
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0; 
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+   /* padding: 1.5em 2.2em;  */
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.predictions{
+  margin-top: 30px;
+}
+
+.power{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 330px;
+}
+
+
+.skill{
+  width: 160px;
+  height:160px;
+  /* background-color: rgb(235, 235, 235); */
+  position: relative;
+  
+}
+
+.outer{
+  height:160px;
+  width: 160px;
+  padding: 20px;
+  /* border: 1px solid red; */
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+  -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.inner{
+  height: 120px;
+  width: 120px;
+  /* border: 1px solid orange; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+  inset -4px  -4px 6px -1px rgba(255, 255, 255, 0.7),
+  -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+  0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+  0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number{
+  font-weight: 600;
+  color: #555;
+
+}
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: anim 2s linear forwards;
+}
+/* circle{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 0;
+  stroke-dashoffset: 450;
+  animation: anim 2s linear forwards;
+}
+
+@keyframes anim{
+  100%{
+    stroke-dashoffset: 157.5;
+  }
+} */
+
+svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/************************ BTN ***********************/
+.selectionOption {
+  appearance: none;
+  background-color: #ffffff;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 54px;
+  left: 6px;
+  position: absolute;
+  top: 27px;
+  width: 253px;
+  border: 1px solid;
+  border-radius: 0px 0px 10px 10px ;
+  /* border-width: 0; */
+  /* box-sizing: border-box; */
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.selectionOption:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 0px 0px 10px 10px ;
+  
+}
+
+.selectionOption:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  
+}
+
+.selectionOption:after {
+  background-color: #FFFFFF;
+}
+
+.selectionOption span {
+  z-index: 1;
+  position: relative;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+@media (max-width: 786px) {
+  .square-white {
+    top: -20px;
+    width: 90%;
+    height: 560px; /* ปรับความสูงให้เหมาะสมกับ mobile */
+    max-width: unset; /* ยกเลิกการกำหนด max-width */
+    min-width: unset; /* ยกเลิกการกำหนด min-width */
+  }
+
+  .square-white-predictions {
+    top: -20px;
+    width: 90%;
+    height: 230px; /* ปรับความสูงให้เหมาะสมกับ mobile */
+    max-width: unset; /* ยกเลิกการกำหนด max-width */
+    min-width: unset; /* ยกเลิกการกำหนด min-width */
+  }
+
+  .containerGameImg {
+    width: 70%; /* ปรับความกว้างให้เป็น 90% ของพื้นที่แสดงผล */
+    margin: 25px auto; /* จัดวางแสดงตรงกลาง */
+    height: 100px;
+    left: 0; /* ย้ายตำแหน่งไปที่ซ้ายสุด */
+    right: 0;
+}
+.cpu {
+  position: absolute;
+  margin: 310px 10px;
+}
+
+.gpu {
+  position: absolute;
+  margin: 310px 170px;
+}
+.resolution{
+  position: absolute;
+  margin: 410px 10px;
+}
+
+.graphics-settings{
+  position: absolute;
+  margin: 410px 170px;
+}
+
+.rectangle {
+  width: 150px;
+}
+
+.selectionOption{
+  width: 144px;
+}
+
+.button-select {
+  left: 8px;
+}
+
+.text-name-component {
+  color: #000000;
+  font-size: 12px;
+  top: 5px;
+  left: 36px;
+}
+
+.selectionOptiongraphic {
+  width: 144px;
+}
+
+.buttonCalcurater{
+  margin: 50px -60px;
+  width: 120px;
+}
+.predictions{
+  margin-top: 20px;
+}
+
+.power{
+  height: 180px;
+}
+
+.buttonSave{
+  position: absolute;
+  margin: 220px 0px 0px 60%;
+  width: 110px;
+}
+}
